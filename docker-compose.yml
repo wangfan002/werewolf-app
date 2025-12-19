@@ -12,7 +12,7 @@ services:
     container_name: werewolf-game
     restart: unless-stopped
     ports:
-      - "3000:80"  # 映射到本地3000端口
+      - "80:80"  # 映射到80端口
     volumes:
       - ./data:/app/server/data  # 持久化数据
     environment:
